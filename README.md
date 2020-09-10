@@ -1,7 +1,7 @@
-# csbc
+# Csbc
 The official website for cornerstone baptist church
 
-> [CSBC] (An arm of Cornerstone Baptist Church Ministries)
+> [CSBC] (An arm of Cornerstone Baptist Church Ministries) <br>
 **God is closer to you than you think.
 
 ![CSBC](csbc.jpg)
