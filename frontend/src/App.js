@@ -1,15 +1,22 @@
 import React from 'react';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Home from './components/Home';
+
+
+import './App.css';import './App.css';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h2> Welcome to the official Website of Cornerstone Baptist Church</h2>
-        <a href="https://csbcministries.org" target="_blank" rel="noopener noreferrer">
-          CSBC Website!!! Coming Soon ...
-        </a>
-      </header>
+    <Router>
+      <Switch>
+          <Route exact path="/" component={Home} />
+        </Switch>
+    </Router>
+    
     </div>
   );
 }
