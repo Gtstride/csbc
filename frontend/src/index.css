@@ -3,6 +3,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: #6178e8;
 }
 
 code {
@@ -10,5 +11,21 @@ code {
 }
 
 a {
-    color: orange;
+    color: rgb(53, 48, 39);
+}
+
+ .item {
+    background-image: url("../src/assets/images/gallery-1.jpg");
+}
+
+.galla-2 {
+    background-image: url("../src/assets//images/gallery-2.jpg");
+}
+
+.galla-3 {
+    background-image: url("../src/assets/images/gallery-3.jpg");
+}
+
+.galla-4 {
+    background-image: url("../src/assets/images/gallery-3.jpg");
 }
