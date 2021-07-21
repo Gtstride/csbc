@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../../assets/images/Logo.png";
-import blog from "../../assets/images/blog-2.jpg";
+// import blog from "../../assets/images/blog-2.jpg";
 import product1 from "../../assets/images/product-1.png";
 import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-2.png";
@@ -348,7 +348,7 @@ const Navbar = () => {
                             alt="Lorem ipsum"
                           />
                         </div> */}
-                       <div className="box">
+                        <div className="box">
                           <div className="h2">Coonect with Us</div>
                           <div className="clearfix">
                             <p>
@@ -546,7 +546,7 @@ const Navbar = () => {
                 {/* Mega menu dropdown */}
                 <li>
                   <a href="index.html#">
-                  Groups{" "}
+                    Groups{" "}
                     <span className="open-dropdown">
                       <i className="fa fa-angle-down" />
                     </span>
