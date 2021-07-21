@@ -1,28 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-
+import './App.css';
+import Navbar from './components/Header/Navbar';
 import Home from './components/Home';
+import SignUp from './components/Auth/SignUp';
 
-
-import './App.css'; import './App.css';
-import Navbar from './components/NavBar/Navbar';
-import Slider from './components/HeaderSlider/Slider';
+// import Slider from './components/HeaderSlider/Slider';
 
 
 const App = () => {
   return (
-    <div className="wrapper">
-      <Navbar />
-
-      <Router>
-        <Switch>
-          <Slider />
-
-          <Route exact path="/" component={Home} />
-        </Switch>
-      </Router>
-    </div>
+    <>
+      <div className="wrapper">
+        <div className="page-loader"></div>
+        <Router>
+          <Switch>
+            <Navbar />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/register" component={SignUp} />
+          </Switch>
+        </Router>
+      </div>
+    </>
   );
 }
 
