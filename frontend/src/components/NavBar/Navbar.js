@@ -7,9 +7,6 @@ import product3 from "../../assets/images/product-2.png";
 import product4 from "../../assets/images/product-2.png";
 import SignIn from '../Auth/SignIn';
 
-import Slider from "./Slider";
-import IconWidget from './IconWidget';
-
 
 const Navbar = () => {
   return (
@@ -26,29 +23,9 @@ const Navbar = () => {
               <li><a href="/#"><i className="fa fa-twitter" /></a></li>
               <li><a href="/#"><i className="fa fa-youtube" /></a></li>
 
-              {/*Currency selector*/}
-              {/* <li className="nav-settings"> <a href="/#" className="nav-settings-value"> USD $ </a>
-                <ul className="nav-settings-list">
-                  <li>USD $</li>
-                  <li>EUR €</li>
-                  <li>CHF Fr.</li>
-                  <li>GBP £</li>
-                </ul>
-              </li> */}
-
-              {/*Language selector*/}
-              {/* <li className="nav-settings"><a href="/#" className="nav-settings-value"> ENG </a>
-                <ul className="nav-settings-list">
-                  <li>ENG</li>
-                  <li>GER</li>
-                  <li>لعربية</li>
-                  <li>עִבְרִית</li>
-                </ul>
-              </li> */}
-
-              <li><a href="/#" className="open-login"><i className="icon icon-user" /></a></li>
-              <li><a href="/#" className="open-search"><i className="icon icon-magnifier" /></a></li>
-              <li><a href="/#" className="open-cart"><i className="icon icon-cart" /><span>3</span></a></li>
+              <li><a href="/#" className="open-login disabled" ><i className="icon icon-user" /></a></li>
+              <li><a href="/#region" className="open-search"><i className="icon icon-magnifier" /></a></li>
+              <li><a href="/#region" className="open-cart"><i className="icon icon-cart" /><span>3</span></a></li>
             </ul>
           </div>
 
@@ -57,10 +34,12 @@ const Navbar = () => {
           <div className="navigation navigation-main">
             {/* Setup your logo here*/}
 
-            <a href="/#" className="logo"><img src={logo} alt="Logo" /></a>
+            <a href="/" className="logo"><img src={logo} alt="Logo" /></a>
 
             {/* Mobile toggle menu */}
-            <a href="/" className="open-menu"> <i className="icon icon-menu" /> </a>
+            {/* <a href="javascript:void(0)" className="open-menu"> <i className="icon icon-menu" /> </a> */}
+            <a href onClick={(e) => { e.preventDefault() }} className="open-menu"><i className="icon icon-menu" /></a>
+
             {/* Convertible menu (mobile/desktop)*/}
             <div className="floating-menu">
               {/* Mobile toggle menu trigger*/}
@@ -75,7 +54,7 @@ const Navbar = () => {
                 </li>
                 {/* Multi-content dropdown */}
                 <li>
-                  <a href="/">
+                  <a href="/meet-us">
                     Meet Us{" "}
                     <span className="open-dropdown">
                       <i className="fa fa-angle-down" />
@@ -115,45 +94,12 @@ const Navbar = () => {
                                     Home - Slider
                                   </a>
                                 </li>
-                                {/*<li>
-                                  <a href="/#">
-                                    Home - Tabsy gallery
-                                  </a>
-                                </li>
-                                 <li>
-                                  <a href="#?">
-                                    Home - Slider full screen
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#?">
-                                    Home - Info icons
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="#/">
-                                    Home - Xmas
-                                  </a>
-                                </li> */}
                                 <li>
                                   <a href="http://www.elathemes.com/themes/mobel/index-rtl.html">
                                     Home - RTL{" "}
                                     <span className="label label-warning">New</span>
                                   </a>
                                 </li>
-                                {/*<li>
-                                  <a href="http://www.elathemes.com/themes/mobel/index-5.html">
-                                    Onepage
-                                  </a>
-                                </li>
-                                 <li>
-                                  <a href="http://www.elathemes.com/themes/mobel/index-6.html">
-                                    Onepage - Filters{" "}
-                                    <span className="label label-warning">
-                                      Isotope
-                                    </span>
-                                  </a>
-                                </li> */}
                               </ul>
                             </div>
                             <div className="col-md-4">
@@ -164,11 +110,6 @@ const Navbar = () => {
                                     Blog grid
                                   </a>
                                 </li>
-                                {/* <li>
-                                  <a href="http://www.elathemes.com/themes/mobel/blog-list.html">
-                                    Blog list
-                                  </a>
-                                </li> */}
                                 <li>
                                   <a href="http://www.elathemes.com/themes/mobel/blog-grid-fullpage.html">
                                     Blog fullpage
@@ -195,12 +136,12 @@ const Navbar = () => {
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="contact.html">
+                                  <a href="/contact-us">
                                     Contact
                                   </a>
                                 </li>
                                 <li>
-                                  <a href="login.html">
+                                  <a href="/register">
                                     Login &amp; Register{" "}
                                     <span className="label label-warning">New</span>
                                   </a>
@@ -1051,10 +992,11 @@ const Navbar = () => {
         {/*/container*/}
       </nav>
       {/* </div> */}
-      <Slider />
-      <IconWidget />
+      {/* <Slider />
+      <IconWidget /> */}
     </div>
   )
 }
 
 export default Navbar
+
