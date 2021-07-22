@@ -1,23 +1,24 @@
 import React from 'react'
+import gall2 from '../../assets/images/gallery-2.jpg'
 
 function SignUp() {
   return (
     <div>
       <section
         className="main-header"
-        style={{ backgroundImage: "url(assets/images/gallery-2.jpg)" }}
+        style={{ backgroundImage: `url(${gall2})` }}
       >
         <header>
           <div className="container text-center">
-            <h2 className="h2 title">Customer page</h2>
+            <h2 className="h2 title">Membership Registration Form</h2>
             <ol className="breadcrumb breadcrumb-inverted">
               <li>
-                <a href="index.html">
+                <a href="/">
                   <span className="icon icon-home" />
                 </a>
               </li>
               <li>
-                <a className="active" href="login.html">
+                <a className="active" href="/login">
                   Login &amp; Register
                 </a>
               </li>
@@ -77,7 +78,7 @@ function SignUp() {
                         </span>
                       </div>
                       <div className="col-xs-6 text-right">
-                        <a href="/" className="btn btn-main">
+                        <a href="/sign-in" className="btn btn-main">
                           Login
                         </a>
                       </div>
@@ -89,7 +90,7 @@ function SignUp() {
                     <div className="h4">
                       Register now{" "}
                       <a
-                        href="/register"
+                        href="/sign-in"
                         className="btn btn-main btn-xs btn-login pull-right"
                       >
                         Log in
@@ -174,7 +175,7 @@ function SignUp() {
                           <label htmlFor="checkBoxId1">
                             I have read and accepted the <a href="/#">terms</a>, as
                             well as read and understood our terms of{" "}
-                            <a href="/#">business contidions</a>
+                            <a href="/#">business conditions</a>
                           </label>
                         </span>
                         <span className="checkbox">

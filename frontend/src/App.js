@@ -1,27 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Router } from 'react-router-dom';
+import history from './services/history';
+import Routes from './routes/Routes';
 
 import './App.css';
-import Navbar from './components/Header/Navbar';
-import Home from './components/Home';
-import SignUp from './components/Auth/SignUp';
-
-// import Slider from './components/HeaderSlider/Slider';
-
+import Navbar from './components/NavBar/Navbar';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   return (
     <>
       <div className="wrapper">
         <div className="page-loader"></div>
-        <Router>
-          <Switch>
-          <Navbar />
-            <Route exact path="/" component={Home} />
-            <Route exact path="/register" component={SignUp} />
+        <Navbar />
+        <Router history={history}>
+          <Routes />
 
-          </Switch>
         </Router>
+        <Footer />
       </div>
     </>
   );
