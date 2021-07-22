@@ -16,9 +16,10 @@ const App = () => {
         <div className="page-loader"></div>
         <Router>
           <Switch>
-            <Navbar />
+          <Navbar />
             <Route exact path="/" component={Home} />
             <Route exact path="/register" component={SignUp} />
+
           </Switch>
         </Router>
       </div>
