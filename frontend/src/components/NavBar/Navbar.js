@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../../assets/images/Logo.png"
+import logo from "../../assets/images/logo.png"
 import product1 from "../../assets/images/product-1.png";
 import product2 from "../../assets/images/product-2.png";
 import product3 from "../../assets/images/product-2.png";
