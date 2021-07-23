@@ -8,8 +8,7 @@ import Home from '../components/Home/Home';
 
 const Routes = () => {
   return (
-    <div className="wrapper">
-      <div className="page-loader"></div>
+    <>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route exact path="/sign-in" component={SignIn} />
@@ -19,7 +18,7 @@ const Routes = () => {
         {/* redirect user to SignIn page if route does not exist and user is not authenticated */}
         <Route exact path="/sign-in" component={SignIn} />
       </Switch>
-    </div>
+    </>
   );
 }
 
